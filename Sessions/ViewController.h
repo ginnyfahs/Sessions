@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+@property (weak, nonatomic) IBOutlet UIButton *resumeButton;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+
+-(IBAction)cancel:(id)sender;
+-(IBAction)resume:(id)sender;
 
 @end
 
